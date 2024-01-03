@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
         )
       )
     )
-    .then((categories) => {
+    .then((categoriesWithSubcategories) => {
       const templateScript =
         document.getElementById("category-template").innerHTML;
       const template = Handlebars.compile(templateScript);
       document.getElementById("categories-container").innerHTML = template({
-        categories,
+        categories: categoriesWithSubcategories,
       });
     })
     .catch((error) => console.error("Error fetching categories:", error));

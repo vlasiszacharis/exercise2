@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Κατηγορία Αγγελιών</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="back-to-home">
+      <a href="index.html">Επιστροφή στην Αρχική Σελίδα</a>
+    </div>
+
+    <div id="login-form-container">
+      <form id="login-form">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+      <div id="login-message"></div>
+    </div>
+
+    <section id="ads-container">
+      <div class="ad">
+        <h3>Τίτλος Αγγελίας</h3>
+        <p>Περιγραφή...</p>
+        <button class="add-to-favorites" data-ad-id="ID_ΑΓΓΕΛΙΑΣ">
+          Προσθήκη στα Αγαπημένα
+        </button>
+      </div>
+    </section>
+
+    <script src="category.js"></script>
+  </body>
+</html>
